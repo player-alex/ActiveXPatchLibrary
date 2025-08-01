@@ -47,7 +47,7 @@ void recvCallback(const std::string& message) {
 }
 
 void Initialize() {
-    udpServer = new UdpServer(1305, recvCallback);
+    udpServer = new UdpServer(BIND_PORT, recvCallback);
     udpServer->start();
 }
 
